@@ -1,0 +1,87 @@
+{
+  "site": {
+    "name": "Patrick Traynor",
+    "role": "Aerospace Engineering @ UNSW Sydney",
+    "intro": "First-year Aerospace Engineering student (UNSW) with a practical engineering project background, five years of high-pressure officiating experience, and a demonstrated record of leadership and reliability.",
+    "email": "paddytraynor8@gmail.com",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/patrick-traynor" },
+      { "label": "LinkedIn", "url": "https://www.linkedin.com/in/patrick-traynor-b487453b0/" }
+    ]
+  },
+  "exhibits": [
+    {
+      "id": "aero",
+      "title": "CFD Racecar Aerodynamics",
+      "wing": "Engineering",
+      "summary": "Postdictive analysis of vehicle aerodynamic surfaces",
+      "tags": ["Aerodynamics", "CFD"],
+      "body": [
+        "Developing and optimising hillclimb racecar aerodynamics using FluidX3D CFD. Iteratively testing bodywork and aerodynamic concepts to analyse downforce, drag, and flow structures, with a focus on improving aerodynamic efficiency and maintaining vehicle balance at high speeds.",
+        "Through iterative testing, the theoretical coefficient of drag decreased by 15% while maintaining the balance of the vehicle. Added geometry had to be regulated by cheap construction, motorsport regulations, and road legality requirements."
+      ],
+      "images": [],
+      "links": []
+    },
+    {
+      "id": "digidash",
+      "title": "Racecar Digital Dashboard",
+      "wing": "Engineering",
+      "summary": "OBD-II interfaced digital vehicle dashboard and logger",
+      "tags": ["Electronics", "Software"],
+      "body": [
+        "Designed and deployed a Raspberry Pi telemetry dashboard for hillclimb competition. Interfaced with OBD-II via Python to translate live engine diagnostics into a custom visual instrument cluster; integrated real-time logging for post-run analysis."
+      ],
+      "images": [],
+      "links": []
+    },
+    {
+      "id": "morphingwing",
+      "title": "Morphing Wing",
+      "wing": "Engineering",
+      "summary": "Team oriented design project for a morphing aeroplane wing",
+      "tags": ["Aerodynamics, CAD"],
+      "body": [
+        "Iteratively designed and tested a morphing aeroplane wing section. Testing and design of compliant mechanisms that make up the surfaces of the aerofoil for wing flexibility and strength."
+      ],
+      "links": []
+    },
+    {
+      "id": "unglamorous",
+      "title": "Unglamorous",
+      "wing": "Coding",
+      "summary": "Solo developer, racing game",
+      "tags": ["Unity", "Game design", "3D modelling"],
+      "body": [
+        "Oversaw all game design processes of an asynchonous-multiplayer racing game. Demo previously released and preparing for full release."
+      ],
+      "links": [
+        { "label": "Steam", "url": "https://store.steampowered.com/app/5200180/Unglamorous/" }
+      ]
+    },
+    {
+      "id": "unconqueredsun",
+      "title": "Unconquered Sun",
+      "wing": "Coding",
+      "summary": "Solo developer, large scale simulation game with roguelite genre",
+      "tags": ["Unity", "Worldbuilding", "Procedural Generation"],
+      "body": [
+        "Constructed a large scale simulation of a procedurally generated scale galaxy, with realistic generation of star systems, and the planets inside of them. Modified for a spaceship-building game, set to release publicly in beta soon."
+      ],
+      "links": [
+	  { "label": "Steam", "url": "https://store.steampowered.com/app/4150580/Unconquered_Sun/" }]
+    },
+	{
+      "id": "suborbital",
+      "title": "Suborbital",
+      "wing": "Coding",
+      "summary": "Solo developer, sci-fi survival game",
+      "tags": ["Unity", "Game design"],
+      "body": [
+        "Developed and released a fully playable Unity game in C#, handling end-to-end development including gameplay systems, player controls, UI, and level design. Implemented core game loops, interactive mechanics, and progression systems while optimising performance through profiling and code refactoring. Managed full production pipeline including version control, playtesting, bug fixing, and final build deployment. (Before AI)"
+      ],
+      "links": [
+	  { "label": "Steam", "url": "https://store.steampowered.com/app/2528640/Suborbital/" }]
+    }
+  ]
+}

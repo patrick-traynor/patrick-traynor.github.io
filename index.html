@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e6e2db">
+  <title>Patrick Traynor</title>
+  <meta name="description" content="Aerospace engineering student at UNSW Sydney. Read the visitor guide, or walk through my projects in a low-poly 3D museum.">
+  <!-- FONTS:START -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <!-- FONTS:END -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tells the browser where "three" lives, so no build step is needed. -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+<!-- APP:START -->
+<main id="landing" class="landing">
+  <header class="intro">
+    <!--<p class="eyebrow">SEE</p>-->
+    <h1 id="site-name">Patrick Traynor</h1>
+    <p id="site-role" class="role">Aerospace Engineering · UNSW Sydney</p>
+    <p id="site-intro" class="lede"></p>
+    <ul id="site-contact" class="contact"></ul>
+  </header>
+
+  <button id="btn-enter" class="enter" type="button" disabled>
+    <span id="enter-view" class="enter-view" aria-hidden="true"><canvas id="scene" tabindex="-1"></canvas></span>
+    <span class="enter-label">
+      <span class="enter-kicker">Walk through the work in 3D</span>
+      <span class="enter-title">Enter the <span class="nowrap">museum <span class="enter-arrow" aria-hidden="true">→</span></span></span>
+      <span id="enter-hint" class="enter-hint"></span>
+      <span id="start-status" class="enter-hint status">Loading...</span>
+    </span>
+  </button>
+
+  <section id="guide" class="guide" aria-labelledby="guide-heading">
+    <header class="guide-head">
+      <p class="eyebrow">Visitor guide</p>
+      <h2 id="guide-heading">Everything on display</h2>
+      <p id="guide-count"></p>
+    </header>
+    <div id="guide-list"></div>
+  </section>
+
+  <footer class="site-foot">
+    <span id="foot-name">Patrick Traynor</span>
+    <span>Built with three.js</span>
+  </footer>
+</main>
+
+<div id="stage" class="stage" hidden></div>
+
+<div id="crosshair" hidden></div>
+<button id="prompt" class="prompt" type="button" hidden></button>
+
+<div id="touch" class="touch" hidden>
+  <div id="look-zone" aria-hidden="true"></div>
+  <div id="stick" aria-hidden="true"><div id="stick-knob"></div></div>
+</div>
+
+<div id="hud" class="hud" hidden>
+  <button id="hud-guide" type="button">Guide <kbd>G</kbd></button>
+  <button id="hud-exit" type="button">Leave</button>
+</div>
+
+<section id="paused" class="paused" hidden aria-label="Paused">
+  <div class="paused-card">
+    <p class="eyebrow">Paused</p>
+    <h2>Still browsing?</h2>
+    <div class="stack">
+      <button id="paused-resume" class="btn teal" type="button">Keep walking</button>
+      <button id="paused-guide" class="btn copper" type="button">Visitor guide</button>
+      <button id="paused-exit" class="btn copper" type="button">Leave the museum</button>
+    </div>
+  </div>
+</section>
+
+<section id="panel" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="panel-title">
+  <article id="panel-card" class="placard"></article>
+</section>
+
+<section id="guide-sheet" class="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="guide-sheet-title">
+  <div id="guide-card" class="pamphlet"></div>
+</section>
+
+<noscript>This portfolio needs JavaScript for the 3D museum and the visitor guide.</noscript>
+<!-- APP:END -->
+</body>
+</html>
