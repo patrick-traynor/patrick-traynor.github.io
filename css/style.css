@@ -332,7 +332,8 @@ a:hover { color: var(--copper-bright); }
 html.touch .prompt { padding-left: 0.85em; }
 html.touch .close kbd, html.touch .hud kbd { display: none; }
 
-.touch { position: fixed; inset: 0; z-index: 5; pointer-events: none; }
+/* The joystick layer. Targeted by id: <html> itself gets the class "touch" on phones, so a .touch rule would pin the whole page. */
+#touch { position: fixed; inset: 0; z-index: 5; pointer-events: none; }
 #look-zone { position: absolute; top: 0; right: 0; bottom: 0; width: 58%; pointer-events: auto; touch-action: none; }
 #stick {
   position: absolute;
